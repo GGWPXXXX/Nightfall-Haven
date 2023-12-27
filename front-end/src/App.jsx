@@ -1,10 +1,12 @@
+import React from 'react';
 import './App.css'
+import {PostLoginNavbar} from "./components/navigation-bar/postLoginNavbar.jsx"
 
 function App() {
 
   return (
     <div className="App">
-      <h1 className='text-red-300'>Hello World!</h1>
+      <PostLoginNavbar  />
     </div>
   )
 }
