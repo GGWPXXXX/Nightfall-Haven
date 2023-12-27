@@ -1,8 +1,10 @@
 import React from "react";
+import { IoPersonCircleOutline } from "react-icons/io5";
+import { CiSearch } from "react-icons/ci";
 
 export function PostLoginNavbar() {
   return (
-    <div className="flex flex-row gap-5 justify-start p-5  items-center h-28 bg-black">
+    <div className="flex flex-row  gap-5 justify-start p-5  items-center h-28 bg-black">
       <div>
         <a href="" className="text-white font-inter">
           HOME
@@ -22,6 +24,12 @@ export function PostLoginNavbar() {
         <p className="text-white mx-96 text-5xl font-playfair">
           Midnight & Haven
         </p>
+      </div>
+      <div className="mr-18">
+        <CiSearch color="white" size={40} />
+      </div>
+      <div className="mr-6">
+      <IoPersonCircleOutline color="white" size={40} />
       </div>
     </div>
   );
