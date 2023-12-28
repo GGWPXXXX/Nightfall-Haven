@@ -26,13 +26,10 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const StyledFeaturedNewsCard = styled('div')({
-  // your custom styles for StyledFeaturedNewsCard
-});
 
 const StyledCard = styled(Card)({
-  maxWidth: 304,
-  width: 400,
+  maxWidth: 400,
+  width: '100%',
   margin: 'auto',
   boxShadow: 'none',
   borderRadius: 30,
