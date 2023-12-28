@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { IoPersonCircleOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 
-export function PostLoginNavbar() {
+export function Navbar() {
   const [selectedMenu, setSelectedMenu] = useState("HOME");
   const [isVisible, setIsVisible] = useState(false);
 
