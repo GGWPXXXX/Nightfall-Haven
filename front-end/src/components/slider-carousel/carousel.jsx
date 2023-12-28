@@ -2,7 +2,7 @@ import Carousel from "react-spring-3d-carousel";
 import { useState, useEffect } from "react";
 import { config } from "react-spring";
 
-export default function Carroussel(props) {
+export function Carroussel(props) {
   const table = props.cards.map((element, index) => {
     return { ...element, onClick: () => setGoToSlide(index) };
   });
