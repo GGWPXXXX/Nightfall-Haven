@@ -57,13 +57,24 @@ export const SliderCarousel = () => {
     },
   ];
   return (
-    <div className="mt-44">
-      <FeaturedCarousel
-        cards={cards}
-        margin="0 auto"
-        offset={2}
-        showArrows={false}
-      />
+    <div>
+      <div className="text-center mt-14 mb-0 text-gray-400 relative">
+        <svg className="absolute inset-0">
+          <text x="50%" y="50%" dy=".35em" textAnchor="middle">
+            <textPath xlinkHref="#curve">Featured Rooms</textPath>
+          </text>
+          <path id="curve" d="M10 80 Q 52.5 10, 95 80" fill="transparent" />
+        </svg>
+      </div>
+
+      <div className="mt-24">
+        <FeaturedCarousel
+          cards={cards}
+          margin="0 auto"
+          offset={2}
+          showArrows={false}
+        />
+      </div>
     </div>
   );
 };
