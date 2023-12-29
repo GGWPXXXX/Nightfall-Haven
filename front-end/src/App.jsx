@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="mt-24">
+      <div className="mt-40">
       <CarouselSlider
         cards={cards}
         margin="0 auto"

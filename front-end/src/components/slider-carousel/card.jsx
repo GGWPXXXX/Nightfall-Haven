@@ -18,7 +18,6 @@ const useStyles = makeStyles(() => ({
   },
   content: {
     padding: 24,
-
   },
   cta: {
     marginTop: 24,
@@ -27,8 +26,8 @@ const useStyles = makeStyles(() => ({
 }));
 
 const StyledCard = styled(Card)({
-  width: "100%",
-  height: "50vh",
+  width: "70%",
+  height: "auto",
   padding: 0,
   boxShadow: "none",
   borderRadius: 30,
@@ -42,8 +41,11 @@ const StyledCardContent = styled(CardContent)(({ theme }) =>
   makeStyles((styles) => styles.content)(theme)
 );
 
-
-export const HotelCard = React.memo(function NewsCard({ background, roomType, roomPictureUrl }) {
+export const HotelCard = React.memo(function NewsCard({
+  background,
+  roomType,
+  roomPictureUrl,
+}) {
   const styles = useStyles();
   const mediaStyles = useWideCardMediaStyles();
   const textCardContentStyles = useN01TextInfoContentStyles();
@@ -53,22 +55,26 @@ export const HotelCard = React.memo(function NewsCard({ background, roomType, ro
   return (
     <StyledCard
       className={cx(styles.root, shadowStyles.root)}
-      style={{ background: background === "gold" ? "linear-gradient(to right, #DDB005, #EBD2A3)" : "linear-gradient(to right, #A6A6A6, #FFFF)" }}
+      style={{
+        background:
+          background === "gold"
+            ? "linear-gradient(to right, #DDB005, #EBD2A3)"
+            : "linear-gradient(to right, #A6A6A6, #FFFF)",
+      }}
     >
       <StyledCardMedia
         component="img"
-        className="h-3/4 w-full object-cover"
+        style={{ objectFit: "cover" }}
+        classes={mediaStyles}
         alt={roomType}
         image={roomPictureUrl}
       />
+
       <StyledCardContent className={styles.content}>
         {[...Array(n)].map((e, i) => (
           <span key={i}></span>
         ))}
-        <TextInfoContent
-          classes={textCardContentStyles}
-          heading={roomType}
-        />
+        <TextInfoContent classes={textCardContentStyles} heading={roomType} />
       </StyledCardContent>
     </StyledCard>
   );
