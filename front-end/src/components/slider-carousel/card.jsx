@@ -50,7 +50,6 @@ export const HotelCard = React.memo(function NewsCard({
   const mediaStyles = useWideCardMediaStyles();
   const textCardContentStyles = useN01TextInfoContentStyles();
   const shadowStyles = useBouncyShadowStyles();
-  const n = 6;
 
   return (
     <StyledCard
@@ -71,9 +70,6 @@ export const HotelCard = React.memo(function NewsCard({
       />
 
       <StyledCardContent className={styles.content}>
-        {[...Array(n)].map((e, i) => (
-          <span key={i}></span>
-        ))}
         <TextInfoContent classes={textCardContentStyles} heading={roomType} />
       </StyledCardContent>
     </StyledCard>
