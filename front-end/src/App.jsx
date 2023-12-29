@@ -2,42 +2,43 @@ import React from "react";
 import "./App.css";
 import { CarouselSlider } from "./components/slider-carousel/carousel.jsx";
 import { Navbar } from "./components/navigation-bar/navbar.jsx";
-import { GoldCard } from "./components/slider-carousel/goldCard.jsx";
-import { SilverCard } from "./components/slider-carousel/silverCard.jsx";
+import { HotelCard } from "./components/slider-carousel/card.jsx";
 
 function App() {
   const cards = [
     {
       key: "SUITE",
-      content: <GoldCard />,
+      content: <HotelCard background="gold" roomType="SUITE" />,
     },
     {
       key: "DELUXE",
-      content: <SilverCard />,
+      content: <HotelCard background= "silver" roomType="DELUXE"/>,
     },
     {
       key: "STANDARD",
-      content: <GoldCard />,
+      content: <HotelCard background="gold" roomType="STANDARD"/>,
     },
 
     {
       key: "FAMILY",
-      content: <SilverCard />,
+      content: <HotelCard background= "silver"roomType="FAMILY"/>,
     },
     {
       key: "PRESIDENTIAL",
-      content: <GoldCard />,
+      content: <HotelCard background="gold" roomType="PRESIDENTIAL" roomPictureUrl="https://cf.bstatic.com/xdata/images/hotel/max1024x768/505997348.jpg?k=ad87c04fdb4f4df8d4e6344243a246a3798c0f98a3a8e70865f76c84e82af45e&o=&hp=1"/>,
     },
   ];
   return (
     <div className="App">
       <Navbar />
+      <div className="mt-24">
       <CarouselSlider
         cards={cards}
         margin="0 auto"
         offset={2}
         showArrows={false}
       />
+      </div>
     </div>
   );
 }

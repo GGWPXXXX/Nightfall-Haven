@@ -18,7 +18,7 @@ export function CarouselSlider(props) {
   }, [props.offset, props.showArrows]);
   return (
     <div
-      style={{ width: "60vw", height: "80vh", margin: props.margin }}
+      style={{ width: props.width, height: props.height, margin: props.margin }}
     >
       <Carousel
         slides={cards}
