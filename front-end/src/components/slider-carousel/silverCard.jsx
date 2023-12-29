@@ -31,7 +31,7 @@ const StyledCard = styled(Card)({
   padding: 0,
   boxShadow: "none",
   borderRadius: 30,
-  background: "linear-gradient(to right, #DDB005, #EBD2A3)",
+  background: "linear-gradient(to right, #A6A6A6, #FFFF)",
 });
 const StyledCardMedia = styled(CardMedia)(({ theme }) =>
   useWideCardMediaStyles(theme)
@@ -45,7 +45,7 @@ const StyledButton = styled(Button)(({ theme }) =>
   makeStyles((styles) => styles.cta)(theme)
 );
 
-export const GoldCard = React.memo(function NewsCard() {
+export const SilverCard = React.memo(function NewsCard() {
   const styles = useStyles();
   const mediaStyles = useWideCardMediaStyles();
   const textCardContentStyles = useN01TextInfoContentStyles();

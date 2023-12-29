@@ -2,7 +2,7 @@ import Carousel from "react-spring-3d-carousel";
 import { useState, useEffect } from "react";
 import { config } from "react-spring";
 
-export function Carroussel(props) {
+export function CarouselSlider(props) {
   const table = props.cards.map((element, index) => {
     return { ...element, onClick: () => setGoToSlide(index) };
   });
@@ -18,7 +18,7 @@ export function Carroussel(props) {
   }, [props.offset, props.showArrows]);
   return (
     <div
-      style={{ width: "100vh", height: "80vh", margin: props.margin }}
+      style={{ width: "60vw", height: "80vh", margin: props.margin }}
     >
       <Carousel
         slides={cards}

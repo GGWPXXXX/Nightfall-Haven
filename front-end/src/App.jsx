@@ -1,45 +1,43 @@
 import React from "react";
 import "./App.css";
-import { Carroussel } from "./components/slider-carousel/carousel.jsx";
+import { CarouselSlider } from "./components/slider-carousel/carousel.jsx";
 import { Navbar } from "./components/navigation-bar/navbar.jsx";
-import { FeaturedNewsCard as CardNews } from "./components/slider-carousel/featuredNewsCard.jsx";
+import { GoldCard } from "./components/slider-carousel/goldCard.jsx";
+import { SilverCard } from "./components/slider-carousel/silverCard.jsx";
 
 function App() {
   const cards = [
     {
-      key: "STANDARD",
-      content: <CardNews />,
+      key: "SUITE",
+      content: <GoldCard />,
     },
     {
       key: "DELUXE",
-      content: <CardNews />,
+      content: <SilverCard />,
     },
     {
-      key: "SUITE",
-      content: <CardNews />,
+      key: "STANDARD",
+      content: <GoldCard />,
     },
+
     {
       key: "FAMILY",
-      content: <CardNews />,
+      content: <SilverCard />,
     },
     {
       key: "PRESIDENTIAL",
-      content: <CardNews />,
+      content: <GoldCard />,
     },
   ];
   return (
     <div className="App">
       <Navbar />
-      <div className="flex flex-row">
-        <Carroussel
-          cards={cards}
-          height="500px"
-          width="90%"
-          margin="0 auto"
-          offset={2}
-          showArrows={false}
-        />
-      </div>
+      <CarouselSlider
+        cards={cards}
+        margin="0 auto"
+        offset={2}
+        showArrows={false}
+      />
     </div>
   );
 }
