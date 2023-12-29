@@ -10,8 +10,7 @@ import { useBouncyShadowStyles } from "@mui-treasury/styles/shadow/bouncy";
 
 const useStyles = makeStyles(() => ({
   root: {
-    maxWidth: 304,
-    width: 400,
+    width: "100%",
     margin: "auto",
     boxShadow: "none",
     borderRadius: 30,
@@ -50,7 +49,7 @@ export const SilverCard = React.memo(function NewsCard() {
   const mediaStyles = useWideCardMediaStyles();
   const textCardContentStyles = useN01TextInfoContentStyles();
   const shadowStyles = useBouncyShadowStyles();
-  const n = 6;
+  const n = 2;
 
   return (
     <StyledCard className={cx(styles.root, shadowStyles.root)}>
