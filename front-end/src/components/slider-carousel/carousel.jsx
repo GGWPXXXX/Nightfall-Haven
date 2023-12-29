@@ -16,10 +16,9 @@ export function Carroussel(props) {
     setOffsetRadius(props.offset);
     setShowArrows(props.showArrows);
   }, [props.offset, props.showArrows]);
-
   return (
     <div
-      style={{ width: props.width, height: props.height, margin: props.margin }}
+      style={{ width: "100vh", height: "80vh", margin: props.margin }}
     >
       <Carousel
         slides={cards}

@@ -7,7 +7,8 @@ export default  {
     extend: {
       fontFamily:{
         playfair:['Playfair Display'],
-        inter:['Inter']
+        inter:['Inter'],
+        poppins:['Poppins'],
       }
     },
   },

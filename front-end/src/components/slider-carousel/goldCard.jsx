@@ -28,14 +28,14 @@ const useStyles = makeStyles(() => ({
 
 
 const StyledCard = styled(Card)({
-  maxWidth: 304,
-  width: "100vw",
-  height: "60vh",
-  margin: 'auto',
-  boxShadow: 'none',
-  borderRadius: 30,
-  background: 'linear-gradient(to right, #DDB005, #EBD2A3)',
-});
+    maxWidth: 304,
+    width: 400,
+    margin: 'auto',
+    boxShadow: 'none',
+    borderRadius: 30,
+    background: 'linear-gradient(to right, #DDB005, #EBD2A3)',
+  });
+
 const StyledCardMedia = styled(CardMedia)(
   ({ theme }) => useWideCardMediaStyles(theme)
 );
