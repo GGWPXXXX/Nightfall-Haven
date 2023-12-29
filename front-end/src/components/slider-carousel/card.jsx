@@ -2,7 +2,7 @@ import React from "react";
 import cx from "clsx";
 import { styled } from "@mui/system";
 import { makeStyles } from "@material-ui/core/styles";
-import { Card, CardMedia, CardContent, Button } from "@mui/material";
+import { Card, CardMedia, CardContent } from "@mui/material";
 import TextInfoContent from "@mui-treasury/components/content/textInfo";
 import { useWideCardMediaStyles } from "@mui-treasury/styles/cardMedia/wide";
 import { useN01TextInfoContentStyles } from "@mui-treasury/styles/textInfoContent/n01";
@@ -11,12 +11,14 @@ import { useBouncyShadowStyles } from "@mui-treasury/styles/shadow/bouncy";
 const useStyles = makeStyles(() => ({
   root: {
     width: "100%",
+    height: "100%",
     margin: "auto",
     boxShadow: "none",
     borderRadius: 30,
   },
   content: {
     padding: 24,
+
   },
   cta: {
     marginTop: 24,
@@ -40,9 +42,6 @@ const StyledCardContent = styled(CardContent)(({ theme }) =>
   makeStyles((styles) => styles.content)(theme)
 );
 
-const StyledButton = styled(Button)(({ theme }) =>
-  makeStyles((styles) => styles.cta)(theme)
-);
 
 export const HotelCard = React.memo(function NewsCard({ background, roomType, roomPictureUrl }) {
   const styles = useStyles();
@@ -58,7 +57,7 @@ export const HotelCard = React.memo(function NewsCard({ background, roomType, ro
     >
       <StyledCardMedia
         component="img"
-        classes={mediaStyles}
+        className="h-3/4 w-full object-cover"
         alt={roomType}
         image={roomPictureUrl}
       />

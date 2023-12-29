@@ -8,20 +8,20 @@ function App() {
   const cards = [
     {
       key: "SUITE",
-      content: <HotelCard background="gold" roomType="SUITE" />,
+      content: <HotelCard background="gold" roomType="SUITE" roomPictureUrl="https://cf.bstatic.com/xdata/images/hotel/max1024x768/505997348.jpg?k=ad87c04fdb4f4df8d4e6344243a246a3798c0f98a3a8e70865f76c84e82af45e&o=&hp=1" />,
     },
     {
       key: "DELUXE",
-      content: <HotelCard background= "silver" roomType="DELUXE"/>,
+      content: <HotelCard background= "silver" roomType="DELUXE" roomPictureUrl="https://cf.bstatic.com/xdata/images/hotel/max1024x768/505997348.jpg?k=ad87c04fdb4f4df8d4e6344243a246a3798c0f98a3a8e70865f76c84e82af45e&o=&hp=1"/>,
     },
     {
       key: "STANDARD",
-      content: <HotelCard background="gold" roomType="STANDARD"/>,
+      content: <HotelCard background="gold" roomType="STANDARD" roomPictureUrl="https://cf.bstatic.com/xdata/images/hotel/max1024x768/505997348.jpg?k=ad87c04fdb4f4df8d4e6344243a246a3798c0f98a3a8e70865f76c84e82af45e&o=&hp=1"/>,
     },
 
     {
       key: "FAMILY",
-      content: <HotelCard background= "silver"roomType="FAMILY"/>,
+      content: <HotelCard background= "silver"roomType="FAMILY" roomPictureUrl="https://cf.bstatic.com/xdata/images/hotel/max1024x768/505997348.jpg?k=ad87c04fdb4f4df8d4e6344243a246a3798c0f98a3a8e70865f76c84e82af45e&o=&hp=1"/>,
     },
     {
       key: "PRESIDENTIAL",
