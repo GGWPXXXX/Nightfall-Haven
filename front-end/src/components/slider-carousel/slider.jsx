@@ -11,6 +11,7 @@ export const SliderCarousel = () => {
           background="gold"
           roomType="SUITE"
           roomPictureUrl="https://cf.bstatic.com/xdata/images/hotel/max1024x768/505997348.jpg?k=ad87c04fdb4f4df8d4e6344243a246a3798c0f98a3a8e70865f76c84e82af45e&o=&hp=1"
+          details="''Spacious luxury with separate living and sleeping areas.''"
         />
       ),
     },
@@ -21,6 +22,7 @@ export const SliderCarousel = () => {
           background="silver"
           roomType="DELUXE"
           roomPictureUrl="https://cf.bstatic.com/xdata/images/hotel/max1024x768/505997348.jpg?k=ad87c04fdb4f4df8d4e6344243a246a3798c0f98a3a8e70865f76c84e82af45e&o=&hp=1"
+          details="''Modern elegance and premium amenities.''"
         />
       ),
     },
@@ -31,6 +33,7 @@ export const SliderCarousel = () => {
           background="gold"
           roomType="STANDARD"
           roomPictureUrl="https://cf.bstatic.com/xdata/images/hotel/max1024x768/505997348.jpg?k=ad87c04fdb4f4df8d4e6344243a246a3798c0f98a3a8e70865f76c84e82af45e&o=&hp=1"
+          details="''Cozy comfort for every traveler on a budget.''"
         />
       ),
     },
@@ -42,6 +45,7 @@ export const SliderCarousel = () => {
           background="silver"
           roomType="FAMILY"
           roomPictureUrl="https://cf.bstatic.com/xdata/images/hotel/max1024x768/505997348.jpg?k=ad87c04fdb4f4df8d4e6344243a246a3798c0f98a3a8e70865f76c84e82af45e&o=&hp=1"
+          details="''Family-friendly comfort for memorable getaways.''"
         />
       ),
     },
@@ -52,6 +56,7 @@ export const SliderCarousel = () => {
           background="gold"
           roomType="PRESIDENTIAL"
           roomPictureUrl="https://cf.bstatic.com/xdata/images/hotel/max1024x768/505997348.jpg?k=ad87c04fdb4f4df8d4e6344243a246a3798c0f98a3a8e70865f76c84e82af45e&o=&hp=1"
+          details="''Ultimate luxury with exclusive services and panoramic views.''"
         />
       ),
     },

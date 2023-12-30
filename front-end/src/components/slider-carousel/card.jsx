@@ -45,6 +45,7 @@ export const HotelCard = React.memo(function NewsCard({
   background,
   roomType,
   roomPictureUrl,
+  details,
 }) {
   const styles = useStyles();
   const mediaStyles = useWideCardMediaStyles();
@@ -70,7 +71,7 @@ export const HotelCard = React.memo(function NewsCard({
       />
 
       <StyledCardContent className={styles.content}>
-        <TextInfoContent classes={textCardContentStyles} heading={roomType} />
+        <TextInfoContent classes={textCardContentStyles} heading={roomType} body={details}/>
       </StyledCardContent>
     </StyledCard>
   );
