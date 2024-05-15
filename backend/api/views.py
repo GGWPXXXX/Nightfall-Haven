@@ -1,11 +1,11 @@
 import sys
 sys.path.append("..")
-from .serializers import CustomerSerializer
+from .serializers import RoomTypeSerializer
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-from customer.models import Customer
+from room.models import RoomType
 from rest_framework import viewsets
 
-class CustomerViewSet(viewsets.ModelViewSet):
-    queryset = Customer.objects.all().order_by('first_name')
-    serializer_class = CustomerSerializer
+class RoomTypeViewSet(viewsets.ModelViewSet):
+    queryset = RoomType.objects.all().order_by('id')
+    serializer_class = RoomTypeSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]

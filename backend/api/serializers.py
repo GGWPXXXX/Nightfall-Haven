@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from customer.models import Customer
+from room.models import RoomType
 
 
-class CustomerSerializer(serializers.HyperlinkedModelSerializer):
+class RoomTypeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Customer
-        fields = ('first_name', 'last_name')
+        model = RoomType
+        fields = ('room_type_name', )
